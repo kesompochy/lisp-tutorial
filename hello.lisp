@@ -1,0 +1,6 @@
+(format t "Hello, Lisp!~%")
+(format t "~a~%" (+ 5 3))
+(format t "~a~%" (- 5 3))
+(with-open-file (stream "output.txt" :direction :output)
+  (format stream "write to file~%"))
+(quit)
